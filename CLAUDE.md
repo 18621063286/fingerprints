@@ -9,6 +9,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **啟動生產伺服器**: `npm start`
 - **執行測試**: `npm test` (使用 Node.js 內建測試執行器)
 
+## Python 工具規則
+
+- **一律使用 `uv`，不得使用 `pip`**
+  - 安裝套件: `uv add <package>` 或 `uv pip install <package>`
+  - 執行腳本: `uv run python script.py`
+  - 建立虛擬環境: `uv venv`
+
 ## 專案架構
 
 本專案是一個使用 FingerprintJS V4 進行瀏覽器指紋採集的測試網站,結合了多層次指紋技術和智慧相似度比對。
